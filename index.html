@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resource Details Form</title>
+</head>
+<body>
+  <h2>Resource Details Form</h2>
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required><br><br>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" required><br><br>
+
+    <label for="technology">Technology:</label><br>
+    <input type="checkbox" name="technology" value="JavaScript">JavaScript<br>
+    <input type="checkbox" name="technology" value="Node.js">Node.js<br>
+    <input type="checkbox" name="technology" value="Express.js">Express.js<br>
+    <input type="checkbox" name="technology" value="MongoDB">MongoDB<br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
