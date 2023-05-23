@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://aranandraj02:raj-anand@cluster0.odmbdit.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/resourceDB', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 // Define resource schema
