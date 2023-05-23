@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/resourceDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://aranandraj02:raj-anand@cluster0.odmbdit.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 // Define resource schema
@@ -72,14 +72,7 @@ app.get('/dashboard', (req, res) => {
 });
 
 
-// , (err, resources) => {
-//     if (err) {
-//       console.error('Error fetching resources:', err);
-//       res.status(500).send('Error fetching resources');
-//     } else {
-//       res.send(resources);
-//     }
-//   }
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
