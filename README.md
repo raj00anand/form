@@ -16,7 +16,7 @@ node app.js
 ```
 
 
->After submitting the It show data in form of json like name, url of file and skills
+>After submitting. It show data in form of json like name, url of file and skills
 
 
 ![![image](https://github.com/raj00anand/form/assets/77964578/d5115374-fe7f-4cae-a85f-727ae4e22ad4)
